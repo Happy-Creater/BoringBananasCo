@@ -1,4 +1,4 @@
-# Binance project
+# Banana Project
 
 # Read respective folders
 
