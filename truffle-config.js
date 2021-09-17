@@ -60,7 +60,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider(
           secretTestnet.mnemonic,
-          `https://rinkeby.infura.io/v3/${secretTestnet.API_KEY}`
+          `https://rinkeby.infura.io/v3/${secretTestnet.INFURA_API_KEY}`
         ),
       network_id: 4,
       confirmations: 2,
@@ -72,7 +72,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider(
           secret.mnemonic,
-          `https://mainnet.infura.io/v3/${secret.API_KEY}`
+          `https://mainnet.infura.io/v3/${secret.INFURA_API_KEY}`
         ),
       network_id: 137,
       confirmations: 10,
@@ -99,6 +99,14 @@ module.exports = {
       //  evmVersion: "byzantium"
       // }
     }
+  },
+
+  plugins: [
+    'truffle-plugin-verify'
+  ],
+
+  api_keys: {
+    etherscan: secretTestnet.API_KEY
   },
 
   // Truffle DB is currently disabled by default; to enable it, change enabled: false to enabled: true

@@ -67,3 +67,6 @@ Rarible (cannibalizing sales)
 - Liquidity mining: they distribute 75k rari tokens every sunday to people who bought or sold stuff on the platform (DROVE TRAFFIC!!)
 - their inflation is too high!! 75k is too high, they already suggested burn mechanism
 - they're implemention commission
+
+# Deployed contract address on rinkeby
+0x8236dc8f183F200D7771532E28D4c6dD209D137E
